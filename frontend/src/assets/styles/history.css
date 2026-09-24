@@ -1,0 +1,312 @@
+
+/* =========================================
+   HISTORY PAGE
+   ========================================= */
+
+.history-page {
+  background: var(--background);
+}
+
+/* =========================================
+   SUMMARY CARDS
+   ========================================= */
+
+.history-summary-card {
+  min-height: 91px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 17px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: #ffffff;
+
+  box-shadow: var(--shadow-sm);
+}
+
+.history-summary-icon {
+  width: 43px;
+  height: 43px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  font-size: 18px;
+}
+
+.history-icon-blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.history-icon-red {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.history-icon-green {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.history-summary-label {
+  margin-bottom: 3px;
+
+  color: var(--text-secondary);
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.history-summary-value {
+  color: var(--text-primary);
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* =========================================
+   HISTORY CARD
+   ========================================= */
+
+.history-card {
+  overflow: hidden;
+}
+
+/* =========================================
+   TOOLBAR
+   ========================================= */
+
+.history-toolbar {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 13px 16px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.history-search {
+  width: 310px;
+
+  height: 36px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.history-search svg {
+  position: absolute;
+  left: 11px;
+
+  color: #98a2b3;
+
+  font-size: 14px;
+}
+
+.history-search input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 12px 0 34px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  outline: none;
+
+  color: var(--text-primary);
+
+  background: #ffffff;
+
+  font-size: 10px;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.history-search input::placeholder {
+  color: #a0aaba;
+}
+
+.history-search input:focus {
+  border-color: #93c5fd;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.07);
+}
+
+.history-filter-btn {
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: var(--text-secondary);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  transition: all 0.18s ease;
+}
+
+.history-filter-btn:hover {
+  border-color: #cbd5e1;
+  color: var(--text-primary);
+}
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.history-table td {
+  height: 58px;
+}
+
+.claim-reference {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.history-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--primary);
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.history-view-btn:hover {
+  color: var(--primary-dark);
+}
+
+/* =========================================
+   PAGINATION
+   ========================================= */
+
+.history-pagination {
+  min-height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 12px 16px;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--text-secondary);
+
+  font-size: 10px;
+}
+
+.history-pagination strong {
+  color: var(--text-primary);
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pagination-buttons button {
+  min-width: 30px;
+  height: 29px;
+
+  padding: 0 8px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: var(--text-secondary);
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+  border-color: #cbd5e1;
+  color: var(--text-primary);
+}
+
+.pagination-buttons button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.pagination-buttons .active-page {
+  border-color: var(--primary);
+
+  background: var(--primary);
+
+  color: #ffffff;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 767px) {
+  .history-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .history-search {
+    width: 100%;
+  }
+
+  .history-filter-btn {
+    justify-content: center;
+  }
+
+  .history-pagination {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pagination-buttons {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+

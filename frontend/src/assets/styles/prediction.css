@@ -1,0 +1,419 @@
+/* =========================================
+   PREDICTION PAGE
+   ========================================= */
+
+.prediction-page {
+  background: var(--background);
+}
+
+.prediction-engine-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 11px;
+
+  border: 1px solid #dcefe4;
+  border-radius: 8px;
+
+  background: #f7fcf9;
+  color: #15803d;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.prediction-engine-status span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 0 3px rgba(34, 197, 94, 0.10);
+}
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+
+.prediction-form-card {
+  overflow: hidden;
+}
+
+.prediction-form-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prediction-form-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+  color: var(--primary);
+
+  font-size: 18px;
+}
+
+/* =========================================
+   FORM BLOCK
+   ========================================= */
+
+.form-block {
+  padding-bottom: 23px;
+  margin-bottom: 23px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.form-block:last-of-type {
+  margin-bottom: 20px;
+}
+
+.form-block-heading {
+  margin-bottom: 16px;
+
+  color: var(--text-primary);
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================
+   INPUT WITH PREFIX
+   ========================================= */
+
+.input-with-prefix {
+  position: relative;
+}
+
+.input-with-prefix > span {
+  position: absolute;
+
+  left: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  color: var(--text-secondary);
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input-with-prefix .form-control {
+  padding-left: 29px;
+}
+
+/* =========================================
+   FORM INFO
+   ========================================= */
+
+.prediction-info {
+  margin-top: 4px;
+}
+
+/* =========================================
+   FORM ACTIONS
+   ========================================= */
+
+.prediction-form-actions {
+  padding-top: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+/* =========================================
+   RESULT CARD
+   ========================================= */
+
+.prediction-result-card {
+  min-height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #f8fbff 100%
+    );
+
+  box-shadow: var(--shadow-sm);
+
+  overflow: hidden;
+}
+
+.prediction-empty {
+  width: 100%;
+
+  padding: 42px 28px;
+
+  text-align: center;
+}
+
+.prediction-empty-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background: #eff6ff;
+  color: var(--primary);
+
+  font-size: 29px;
+}
+
+.prediction-empty-title {
+  margin-bottom: 8px;
+
+  font-family: 'Manrope', sans-serif;
+
+  color: var(--text-primary);
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.prediction-empty p {
+  max-width: 280px;
+
+  margin: 0 auto 20px;
+
+  color: var(--text-secondary);
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.prediction-empty-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 9px;
+
+  border-radius: 999px;
+
+  background: #f0fdf4;
+
+  color: #15803d;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.prediction-empty-status span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+}
+
+/* =========================================
+   RESULT
+   ========================================= */
+
+.prediction-result {
+  width: 100%;
+
+  padding: 35px 28px;
+}
+
+.result-label {
+  margin-bottom: 17px;
+
+  color: var(--text-muted);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.result-icon {
+  width: 54px;
+  height: 54px;
+
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #fef2f2;
+  color: #dc2626;
+
+  font-size: 23px;
+}
+
+.result-title {
+  margin-bottom: 8px;
+
+  font-family: 'Manrope', sans-serif;
+
+  color: #b91c1c;
+
+  font-size: 23px;
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+.result-description {
+  color: var(--text-secondary);
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.risk-score {
+  margin-top: 27px;
+  padding-top: 21px;
+
+  border-top: 1px solid #edf0f4;
+}
+
+.risk-score-label {
+  color: var(--text-secondary);
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.risk-score-value {
+  margin-top: 5px;
+
+  font-family: 'Manrope', sans-serif;
+
+  color: var(--text-primary);
+
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.risk-progress {
+  height: 7px;
+
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: #fee2e2;
+}
+
+.risk-progress-value {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #dc2626;
+}
+
+.result-warning {
+  margin-top: 22px;
+
+  padding: 11px;
+
+  display: flex;
+  gap: 8px;
+
+  border-radius: 8px;
+
+  background: #fff7ed;
+
+  color: #9a3412;
+
+  font-size: 9.5px;
+  line-height: 1.6;
+}
+
+.result-warning svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+}
+.input-with-suffix {
+  position: relative;
+}
+
+.input-with-suffix > span {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input-with-suffix .form-control {
+  padding-right: 35px;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1199px) {
+  .prediction-result-card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .prediction-engine-status {
+    align-self: flex-start;
+  }
+
+  .prediction-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .prediction-form-actions button {
+    width: 100%;
+  }
+
+  .prediction-empty,
+  .prediction-result {
+    padding: 32px 22px;
+  }
+}
+
