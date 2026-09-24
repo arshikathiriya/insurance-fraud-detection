@@ -131,8 +131,7 @@ function Prediction() {
         vehicle_price: Number(formData.vehiclePrice),
         vehicle_color: formData.vehicleColor,
         total_claim: Number(formData.totalClaim),
-        injury_claim: String(formData.injuryClaim),
-        policy_deductible: Number(formData.policyDeductible),
+injury_claim: Number(formData.injuryClaim),        policy_deductible: Number(formData.policyDeductible),
         annual_premium: Number(formData.annualPremium),
         days_open: Number(formData.daysOpen),
         form_defects: Number(formData.formDefects),
@@ -144,7 +143,7 @@ function Prediction() {
       };
 
       const response = await fetch(
-        'http://127.0.0.1:5000/api/predict',
+        'https://insurance-fraud-backend-qn6g.onrender.com/api/predict',
         {
           method: 'POST',
           headers: {

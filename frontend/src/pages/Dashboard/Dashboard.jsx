@@ -32,9 +32,9 @@ function Dashboard() {
 
       const [predictionsResponse, summaryResponse, modelResponse] =
         await Promise.all([
-          fetch('http://127.0.0.1:5000/api/predictions'),
-          fetch('http://127.0.0.1:5000/api/predictions/summary'),
-          fetch('http://127.0.0.1:5000/api/model-info'),
+          fetch('https://insurance-fraud-backend-qn6g.onrender.com/api/predictions'),
+          fetch('https://insurance-fraud-backend-qn6g.onrender.com/api/predictions/summary'),
+          fetch('https://insurance-fraud-backend-qn6g.onrender.com/api/model-info'),
         ]);
 
       const predictionsData = await predictionsResponse.json();
