@@ -15,7 +15,6 @@ from flask_swagger_ui import get_swaggerui_blueprint
 # ============================================================
 
 app = Flask(__name__)
-
 CORS(
     app,
     resources={
@@ -25,6 +24,7 @@ CORS(
                 "http://127.0.0.1:5173",
                 "http://localhost:5174",
                 "http://127.0.0.1:5174",
+                "https://insurance-fraud-frontend.vercel.app",
             ]
         }
     },
