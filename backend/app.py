@@ -23,6 +23,8 @@ CORS(
             "origins": [
                 "http://localhost:5173",
                 "http://127.0.0.1:5173",
+                "http://localhost:5174",
+                "http://127.0.0.1:5174",
             ]
         }
     },
@@ -256,7 +258,7 @@ def swagger_json():
 
         "servers": [
             {
-                "url": "http://127.0.0.1:5000"
+                "url": "https://insurance-fraud-backend-qn6g.onrender.com"
             }
         ],
 
